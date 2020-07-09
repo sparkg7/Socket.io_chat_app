@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="Kamil Gołub"/>
+        <title>ChatNet</title>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/3d1e0c9dae.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="enter-username">
+            <div class="tytle">
+                <i class="fas fa-comments"></i><span>ChatNet</span>
+            </div>
+            <form class="forma">
+                <label for="usrn" class="name-label">Nazwa</label> <br/>
+                <input type="text" name="username" placeholder="Wprowadź nazwę" id="usrn" class="username-input"/> <br/>
+                <select id="room-select" name="room">
+                    <option value="">Wybierz pokój</option>
+                    <option value="room1">Pokój 1</option>
+                    <option value="room2">Pokój 2</option>
+                    <option value="room3">Pokój 3</option>
+                </select>
+                <input type="submit" value="Dołącz" class="submit-button" />
+                <div class="msg-dic">
+                    <p class="error">Ta nazwa jest już zajęta!</p>
+                </div>
+            </form>
+        </div>
+        <div class="chat-div">
+            <div class="nav">
+                <i class="fas fa-comments"></i><span>ChatNet</span> <i class="fas fa-users users-toggle"></i>
+            </div>
+            <div class="contnt">
+                <div class="users">
+                    <div class="ttle">
+                        <i class="fas fa-users"></i><span>Online</span>
+                    </div>
+                    <div class="usersDiv">
+                        
+                    </div>
+                </div>
+                <div class="msgs">
+                    <div class="messages-div">
+                        <!--<div class="single-message">
+                            <div class="message-header">
+                                <span class="message-owner">Username</span><span class="time">12:54</span>
+                            </div>
+                            <div class="message-content">
+                                <p class="txts">To jest przykładodomośćTowiadtdowa w wiadorzykładowa wiadomość</p>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+                <form class="send-msg">
+                    <input type="text" name="inputmsg" class="input-msg" placeholder="Wprowadź wiadomość..."/>
+                    <!--<input type="submit" value="Send" class="submit-msg"/>-->
+                    <button type="submit" class="submit-msg"><i class="fas fa-paper-plane"></i> Wyślij </button>
+                </form>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/sockets.js"></script>
+        <script src="js/toggle-users.js"></script>
+    </body>
+</html>
