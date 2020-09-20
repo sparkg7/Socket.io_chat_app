@@ -1,5 +1,7 @@
 # Chat app created with node and socket.io
 
+You can test the app here: https://kamil-chat-app.herokuapp.com/
+
 Here are some screens how app looks like.
 
 ### Here you can type your username
