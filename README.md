@@ -5,3 +5,6 @@ Here are some screens how app looks like.
 ### Here you can type your username
 ![wprowadzanie_nazwy](https://user-images.githubusercontent.com/56603035/93717814-838e2680-fb78-11ea-875e-417d88f17f55.png)
 
+### Here how it looks on mobile
+![wprowadzanie_mobile](https://user-images.githubusercontent.com/56603035/93717888-e5e72700-fb78-11ea-8e77-383713682aae.png)
+
