@@ -3,8 +3,9 @@ const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const users = [];
+const port = process.env.PORT || 8000
 
-server.listen(8000);
+server.listen(port);
 
 app.use(express.static(__dirname + '/public'));
 
